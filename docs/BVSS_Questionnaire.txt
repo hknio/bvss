@@ -1,0 +1,30 @@
+This questionnaire allows a resource owner to define the maximum impact that a vulnerability can have.
+
+Impact of violation of Confidentiality / Integrity / Availability can be:
+ - High - 1
+ - Medium - 0.66
+ - Low - 0.3
+
+Questions:
+
+What is the impact of the resource being down for 15 min:
+ - Don't care / it can't be taken down / we rely on a 3rd party, for example, a smart contract on the Ethereum platform (Availability impact = 0)
+ - Low/medium - (Availability impact = 0.3)
+ - High - (Availability impact = 1)
+
+// Optional question, appears if the answer for previous was low/medium:
+What is the impact of the resource being down for 3 hours:
+ - Low/medium (Availability impact = 0.3)
+ - High (Availability impact = 0.66)
+
+What is the impact of the full leak/disclosure of the resource information?
+ - None, for example, public blockchain (Confidentiality impact = 0)
+ - Low (Confidentiality impact = 0.3)
+ - Medium (Confidentiality impact = 0.66)
+ - High (Confidentiality impact = 1)
+
+What is the impact of the change to any resource data including all databases?
+ - None (Integrity impact = 0)
+ - Low (Integrity impact = 0.3)
+ - Medium (Integrity impact = 0.66)
+ - High (Integrity impact = 1)
