@@ -5,7 +5,7 @@ The Blockchain Vulnerability Scoring System (BVSS) is scoring system for all blo
 ## BVSS Principle
 
 The BVSS formula was inspired by https://www.first.org/cvss/ . We introduce several changes:
-1. We added a BVSS base score. If there is a chance that tokens, crypto, or fiat money can be lost or blocked, the vulnerability is assessed as a high level threat and it's score should be more than 8 (High).
+1. We added a BVSS base score. If there is a chance that tokens, crypto, or fiat money can be stolen, the vulnerability is assessed as a high level threat and it's score should be more than 8 (High). If tokens, crypto, or fiat money can be blocked in contract - base score is 6.
 2. We added a value parameter for violation of Confidentiality / Integrity / Availability - if the value parameter for any of them is high, it's violation can be assessed as a critical vulnerability.
 
 List of parameters used in BVSS:
@@ -18,7 +18,7 @@ List of parameters used in BVSS:
 7. Confidentiality / Integrity / Availability Value
 8. Confidentiality / Integrity / Availability Impact
 Their values are evaluated as displayed on the picture below or in the `/docs/Parameter_Values.xlsx` file.
-![](\docs\Parameter_Values.jpg)
+![](docs\Parameter_Values.jpg)
 
 ### The BVSS Formula
 

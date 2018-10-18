@@ -7,7 +7,8 @@
 """
 
 Base:
- - 8, if tokens, crypto can be lost, blocked etc.
+ - 8, if tokens, crypto can be stolen
+ - 6, if tokens, crypto can be lost, blocked etc
  - 0, else
 
 Vector:
@@ -42,8 +43,6 @@ Confidentiality / Integrity / Availability
     - Low - 0.33
 
 """
-
-import json
 
 class Vuln():
 
@@ -82,10 +81,3 @@ class Vuln():
         elif self.score < 4 and self.score >= 0.1:
             self.bvss = "Low"
         return self.bvss
-
-with open('tests/test_data.json') as f:
-    vulns = json.load(f)
-
-for vuln in vulns:
-    item = Vuln(vuln)
-    print("Desc: {}\nScore: {}\nBVSS: {}\n".format(item.desc, item.calc_score(), item.calc_bvss()))
