@@ -1,0 +1,15 @@
+[{
+  "desc": "Extracting private key from hardware wallet",
+  "base": "S",
+  "vector": "P",
+  "complexity": "H",
+  "privileges": "N",
+  "ui": "N",
+  "scope": "U",
+  "conf_impact": "H",
+  "conf_weight": "H",
+  "integ_impact": "N",
+  "integ_weight": "N",
+  "avail_impact": "N",
+  "avail_weight": "N"
+}]
